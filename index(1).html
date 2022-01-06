@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>首頁</title> 
+   <style>
+    body{
+    margin:0px;
+    padding:0px;
+    background:#fff url("背景(2).jpg") center center fixed no-repeat;
+    background-size: cover;
+    }        
+   	.d1{
+    background: skyblue;
+   	}
+   	.p1{
+    font-size: 20px;
+    font-color: white ;
+    text-align: center;
+   	}
+    table{
+    	border-collapse: collapse;
+    }
+    table{
+    text-align: center;
+    }
+.wrap{
+    width: 1500px;
+    margin: 0 auto;
+/*     transform: scale3d(1,1,1); */
+}
+
+.header{
+/*     display: flex; */
+    position: fixed;
+/*     width: 100% ;    */
+    padding: 0 20px;
+    background-color: rgba(18,18,18,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-right: 10px;
+}
+
+.menu li:nth-child(3){
+    margin-right: 0;
+}
+
+.menu li a{
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    border-bottom: 8px solid transparent;
+}
+
+.menu li a:hover{
+    color: #06bd8e;
+    border-bottom: 8px solid #00cc99;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #323228;
+    padding: 40px;
+}
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header wrap" div style="font-family:標楷體;">
+            <ul class="menu">
+                <li><a href="關於我.html">關於我</a></li>
+                <li><a href="課程.html">課程</a></li>
+                <li><a href="問答.html">問答</a></li>
+            </ul>
+        </div>
+	<div class="d1"div style="font-family:標楷體;">
+	<p class="p1"><b>班級:資工二甲<br> 姓名:吳冠興<br> 學號:1110932013<br><b></p>	
+	</div>
+	<hr>
+    <table border="1" align="center" cellpadding="5" cellspacing="5" width="700" height="300">
+    <tr>
+        <button type="button"><a href="hw01.html"><p>HTML表格</p><img src="HTML表格.jpg" width="450" height="250"></button>
+    </tr>
+    <tr><button type="button"><a href="hw02.html"><p>九九乘法表</p><img src="九九乘法表.jpg" width="450" height="250"></button>
+    </tr>
+    <tr><button type="button"><a href="div排版(加分).html"><p>div排版</p><img src="div排版.jpg" width="450" height="250"></button>
+    </tr>
+    <tr><button type="button"><a href="hw04.html"><p>部落格</p><img src="部落格.jpg" width="450" height="250"></button>
+    </tr>
+    <tr><button type="button"><a href="hw06.html"><p>九九乘法表2</p><img src="九九乘法表2.jpg" width="450" height="250"></button>
+    </tr>
+    <tr><button type="button"><a href="index.html"><p>舊網頁</p><img src="舊網頁.jpg" width="450" height="250"></button>
+    </tr>
+    <div style="text-align:center;padding:10em 0;">
+    <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1668399"><span style="color: black;">當地時間</span><br/>Taichung, Taiwan</a></h4> 
+        <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FTaipei" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+	<div id="timebar"></div>
+	</script>
+    <script type="text/javascript">
+$(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 495)  {
+       $('.dropdowns').addClass('navFixed');
+    } else {
+      $('.dropdowns').removeClass('navFixed');
+    }
+  });
+});
+</script>  
+</body>
+</html>
+

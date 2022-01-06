@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>課程</title>
+</head>
+<body>
+	<div id="timebar"></div>
+	<script type="text/javascript">
+		s = 3;
+		function show()
+		{
+        	str = "目前尚為提供課程查看服務,過"+--s+" 秒後跳轉到首頁"
+        	timebar = document.getElementById('timebar');
+        	timebar.innerHTML = str;
+        	if(s==0)
+        		location.href = "index(1).html";
+		}
+		setInterval(show,1000);
+		show();
+	</script>
+</body>
+</html>
